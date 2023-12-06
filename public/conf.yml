@@ -5,8 +5,8 @@ pageInfo:
     - title: GitHub
       path: https://github.com/wikiq/dashy
       target: newtab
-    - title: Documentation
-      path: https://dashy.to/docs
+    - title: WIkiq
+      path: https://loser.dev
       target: newtab
 appConfig:
   theme: tama

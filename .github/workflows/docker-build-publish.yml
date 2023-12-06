@@ -51,7 +51,7 @@ jobs:
           maintainer=Lissy93
           org.opencontainers.image.title=Dashy
           org.opencontainers.image.description=A self-hosted startpage for your server
-          org.opencontainers.image.documentation=https://dashy.to/docs
+          org.opencontainers.image.documentation=https://loser.dev
           org.opencontainers.image.authors=Alicia Sykes
           org.opencontainers.image.licenses=MIT
 

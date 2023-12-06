@@ -221,7 +221,7 @@ sections:
       - &ref_25
         title: KubeSphere
         icon: https://icon.horse/icon/www.kubesphere.io
-        url: https://www.kubesphere.io
+        url: https://kubesphere.io/zh/learn/
         target: newtab
         id: 6_816_kubesphere
       - &ref_26

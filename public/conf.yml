@@ -1,5 +1,3 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
   title: Wikiq
   description: Welcome to your dashboard!
@@ -97,6 +95,18 @@ sections:
         url: https://mail.onmail.com
         target: newtab
         id: 11_399_loser
+      - &ref_12
+        title: LockrMail
+        icon: https://icon.horse/icon/lockrmail.com
+        url: https://lockrmail.com
+        target: newtab
+        id: 12_399_lockrmail
+      - &ref_13
+        title: Proton
+        icon: https://icon.horse/icon/www.proton.me
+        url: https://mail.proton.me
+        target: newtab
+        id: 13_399_proton
     filteredItems:
       - *ref_0
       - *ref_1
@@ -110,6 +120,8 @@ sections:
       - *ref_9
       - *ref_10
       - *ref_11
+      - *ref_12
+      - *ref_13
     displayData:
       sortBy: default
       rows: 1
@@ -125,35 +137,42 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_12
+      - &ref_14
         title: ChatGPT
         icon: https://icon.horse/icon/openai.com
         url: https://chat.openai.com
         target: newtab
         id: 0_229_chatgpt
-      - &ref_13
+      - &ref_15
         title: Bard
         icon: https://icon.horse/icon/bard.google.com
         url: https://bard.google.com
         target: newtab
         id: 1_229_bard
-      - &ref_14
+      - &ref_16
         title: Claude
         icon: https://icon.horse/icon/www.claude.ai
         url: https://www.claude.ai
         target: newtab
         id: 2_229_claude
-      - &ref_15
+      - &ref_17
         title: Copilot
         icon: https://icon.horse/icon/copilot.microsoft.com
         url: https://copilot.microsoft.com
         target: newtab
         id: 3_229_copilot
+      - &ref_18
+        title: LobeChat
+        icon: https://icon.horse/icon/loser.dev
+        url: https://chat.loser.dev
+        target: newtab
+        id: 4_229_lobechat
     filteredItems:
-      - *ref_12
-      - *ref_13
       - *ref_14
       - *ref_15
+      - *ref_16
+      - *ref_17
+      - *ref_18
   - name: Learning
     icon: https://icon.horse/icon/icourse163.org
     displayData:
@@ -163,39 +182,60 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_16
+      - &ref_19
         title: Kubernetes
         icon: https://icon.horse/icon/kubernetes.feisky.xyz
         url: https://kubernetes.feisky.xyz
         target: newtab
         id: 0_816_kubernetes
-      - &ref_17
+      - &ref_20
         title: Duolingo
         icon: https://icon.horse/icon/duolingo.com
         url: https://www.duolingo.com
         target: newtab
         id: 1_816_duolingo
-      - &ref_18
+      - &ref_21
         title: Cake
         icon: https://icon.horse/icon/cake.day
         url: https://cake.day
         target: newtab
         id: 2_816_cake
-      - &ref_19
-        title: Iximiuz
-        icon: https://icon.horse/icon/iximiuz.com
-        url: https://labs.iximiuz.com
+      - &ref_22
+        title: Kubernetes.io
+        icon: https://icon.horse/icon/kubernetes.feisky.xyz
+        url: https://kubernetes.io
         target: newtab
-        id: 3_816_iximiuz
-      - &ref_20
+        id: 3_816_kubernetesio
+      - &ref_23
         title: Killercoda
         icon: https://icon.horse/icon/killercoda.com
         url: https://killercoda.com
         target: newtab
         id: 4_816_killercoda
+      - &ref_24
+        title: Figma
+        icon: https://icon.horse/icon/figma.com
+        url: https://www.figma.com
+        target: newtab
+        id: 5_816_figma
+      - &ref_25
+        title: Miro
+        icon: https://icon.horse/icon/www.miro.com
+        url: https://www.miro.com
+        target: newtab
+        id: 6_816_miro
+      - &ref_26
+        title: Iximiuz
+        icon: https://icon.horse/icon/labs.iximiuz.com
+        url: https://labs.iximiuz.com
+        target: newtab
+        id: 7_816_iximiuz
     filteredItems:
-      - *ref_16
-      - *ref_17
-      - *ref_18
       - *ref_19
       - *ref_20
+      - *ref_21
+      - *ref_22
+      - *ref_23
+      - *ref_24
+      - *ref_25
+      - *ref_26

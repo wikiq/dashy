@@ -1,47 +1,201 @@
 ---
 # Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Wikiq
+  description: Welcome to your dashboard!
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GitHub
+      path: https://github.com/wikiq/dashy
+      target: newtab
+    - title: Documentation
+      path: https://dashy.to/docs
+      target: newtab
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: tama
+  layout: auto
+  iconSize: medium
+  language: en
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Also
+    icon: fas fa-rocket
+    items:
+      - &ref_0
+        title: Me
+        description: Development a project management links for Dashy
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        url: https://bento.me/qi
+        target: newtab
+        id: 0_399_me
+      - &ref_1
+        title: GitHub
+        description: Source Code, Issues and Pull Requests
+        icon: favicon
+        url: https://github.com/wikiq/dashy
+        target: newtab
+        id: 1_399_github
+      - &ref_2
+        title: Docs
+        description: Configuring & Usage Documentation
+        provider: Dashy.to
+        icon: far fa-book
+        url: https://dashy.to/docs
+        id: 2_399_docs
+      - &ref_3
+        title: YouTube
+        description: Movie for YouTube
+        icon: https://icon.horse/icon/youtube.com
+        url: https://www.youtube.com
+        target: newtab
+        id: 3_399_youtube
+      - &ref_4
+        title: Netflix
+        description: Netflix
+        icon: https://icon.horse/icon/www.netflix.com
+        url: https://www.netflix.com
+        target: newtab
+        id: 4_399_netflix
+      - &ref_5
+        title: Support
+        description: Get help with Dashy, raise a bug, or get in contact
+        icon: far fa-hands-helping
+        url: mailto:me@loser.dev
+        target: newtab
+        id: 5_399_support
+      - &ref_6
+        title: Telegram
+        icon: https://icon.horse/icon/web.telegram.org
+        url: https://web.telegram.org
+        target: newtab
+        id: 6_399_telegram
+      - &ref_7
+        title: Twitter
+        icon: https://icon.horse/icon/www.twitter.com
+        url: https://www.twitter.com
+        target: newtab
+        id: 7_399_twitter
+      - &ref_8
+        title: Y Music
+        icon: https://img.icons8.com/?size=256&id=V1cbDThDpbRc&format=png
+        url: https://music.youtube.com
+        target: newtab
+        id: 8_399_ymusic
+      - &ref_9
+        title: Skiff
+        icon: https://icon.horse/icon/www.skiff.com
+        url: https://www.skiff.com
+        target: newtab
+        id: 9_399_skiff
+      - &ref_10
+        title: MSN
+        icon: https://icon.horse/icon/outlook.com
+        url: https://outlook.live.com
+        target: newtab
+        id: 10_399_msn
+      - &ref_11
+        title: Loser
+        icon: https://icon.horse/icon/onmail.com
+        url: https://mail.onmail.com
+        target: newtab
+        id: 11_399_loser
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+      - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: LLM
+    icon: https://icon.horse/icon/cloud.google.com
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_12
+        title: ChatGPT
+        icon: https://icon.horse/icon/openai.com
+        url: https://chat.openai.com
+        target: newtab
+        id: 0_229_chatgpt
+      - &ref_13
+        title: Bard
+        icon: https://icon.horse/icon/bard.google.com
+        url: https://bard.google.com
+        target: newtab
+        id: 1_229_bard
+      - &ref_14
+        title: Claude
+        icon: https://icon.horse/icon/www.claude.ai
+        url: https://www.claude.ai
+        target: newtab
+        id: 2_229_claude
+      - &ref_15
+        title: Copilot
+        icon: https://icon.horse/icon/copilot.microsoft.com
+        url: https://copilot.microsoft.com
+        target: newtab
+        id: 3_229_copilot
+    filteredItems:
+      - *ref_12
+      - *ref_13
+      - *ref_14
+      - *ref_15
+  - name: Learning
+    icon: https://icon.horse/icon/icourse163.org
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_16
+        title: Kubernetes
+        icon: https://icon.horse/icon/kubernetes.feisky.xyz
+        url: https://kubernetes.feisky.xyz
+        target: newtab
+        id: 0_816_kubernetes
+      - &ref_17
+        title: Duolingo
+        icon: https://icon.horse/icon/duolingo.com
+        url: https://www.duolingo.com
+        target: newtab
+        id: 1_816_duolingo
+      - &ref_18
+        title: Cake
+        icon: https://icon.horse/icon/cake.day
+        url: https://cake.day
+        target: newtab
+        id: 2_816_cake
+      - &ref_19
+        title: Iximiuz
+        icon: https://icon.horse/icon/iximiuz.com
+        url: https://labs.iximiuz.com
+        target: newtab
+        id: 3_816_iximiuz
+      - &ref_20
+        title: Killercoda
+        icon: https://icon.horse/icon/killercoda.com
+        url: https://killercoda.com
+        target: newtab
+        id: 4_816_killercoda
+    filteredItems:
+      - *ref_16
+      - *ref_17
+      - *ref_18
+      - *ref_19
+      - *ref_20

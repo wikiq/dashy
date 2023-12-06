@@ -72,7 +72,7 @@ sections:
         target: newtab
         id: 7_399_twitter
       - &ref_8
-        title: Y Music
+        title: YT Music
         icon: https://img.icons8.com/?size=256&id=V1cbDThDpbRc&format=png
         url: https://music.youtube.com
         target: newtab
